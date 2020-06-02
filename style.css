@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #282828;
+    color: #F5F5F5;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+img {
+    height: 100px;
+}
