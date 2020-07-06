@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.logo {
+    width: 30%;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.logo>i {
+    font-size: 3rem;
+}
