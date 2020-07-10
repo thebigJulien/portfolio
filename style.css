@@ -47,10 +47,12 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-    margin-top: 10px;
 }
-i {
+.footer {
     color: hotpink;
     border: 1px solid pink;
-    padding: 20px 40px 26px 40px;
+    padding: 15px;
+    width: 25%;
+    text-align: center;
+    font-size: 1.3rem;
 }
