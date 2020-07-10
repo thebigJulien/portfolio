@@ -7,7 +7,7 @@
 .each-contact {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 p {
@@ -15,6 +15,10 @@ p {
 }
 
 .title {
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin: 70px 0;
+}
+
+.each-contact>i {
+    color: #ECFF00;
 }
