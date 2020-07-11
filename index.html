@@ -7,6 +7,8 @@
   <title>The Big Portfolio</title>
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/4ce7662bf8.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./JS/contact-form.js"></script>
 </head>
 
 <body>
@@ -26,10 +28,26 @@
     <h3>Front-End Developer</h3>
   </main>
 
+
+  <!-- CONTACT FORM -->
+  <div id="contactForm">
+
+    <h1>Write me!</h1>
+    <p>I would love to hear from you</p>
+    
+    <form action="https://formspree.io/mwkrebze" method="POST">
+      <input placeholder="Name" type="text" name="name" required />
+      <input placeholder="Email" type="email" name="email" required />
+      <textarea placeholder="Comment" name="message" required></textarea>
+      <button class="formBtn" type="submit">Submit</button>
+    </form>
+  </div>
+<!-- ---------------------- -->
+
   <footer>
     <a href="https://github.com/thebigJulien" target="_blank" class="footer" title="GitHub"><i class="fab fa-github"></i></a>
     <a href="https://www.linkedin.com/in/julien-montagnon/" target="_blank" class="footer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a class="footer" title="Write me!"><i class="far fa-envelope-open"></i></a>
+    <a class="footer" title="Write me!" id="contact" href="#"><i class="far fa-envelope-open"></i></a>
     <a href="./Julien's Resume (1).pdf" target="_blank" class="footer" title="my CV"><i class="far fa-file"></i></a>
   </footer>
 </body>

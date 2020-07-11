@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Big Portfolio</title>
   <link rel="stylesheet" href="../css/projects.css">
+  <link rel="stylesheet" href="../css/style.css">
   <script src="https://kit.fontawesome.com/4ce7662bf8.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../JS/contact-form.js"></script>
 </head>
 
 <body>
@@ -15,7 +18,7 @@
     <div>
       <a href="https://github.com/thebigJulien" ><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/julien-montagnon-a68213174/"><i class="fab fa-linkedin"></i></a>
-      <a><i class="far fa-envelope-open"></i></a>
+      <a id="contact" title="Write me!" href="#"><i class="far fa-envelope-open"></i></a>
       <a href="../Julien's Resume (1).pdf" target="_blank" title="my CV"><i class="far fa-file"></i></a>
     </div>
   </nav>
@@ -23,6 +26,21 @@
   <main>
     <h1>My Projects</h1>
   </main>
+
+  <!-- CONTACT FORM -->
+  <div id="contactForm">
+
+    <h1>Write me!</h1>
+    <p>I would love to hear from you</p>
+    
+    <form action="https://formspree.io/mwkrebze" method="POST">
+      <input placeholder="Name" type="text" name="name" required />
+      <input placeholder="Email" type="email" name="email" required />
+      <textarea placeholder="Comment" name="message" required></textarea>
+      <button class="formBtn" type="submit">Submit</button>
+    </form>
+  </div>
+<!-- ---------------------- -->
 </body>
 
 </html>
