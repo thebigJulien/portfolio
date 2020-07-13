@@ -6,7 +6,7 @@ body {
     background-color: #020200;
     color: #F5F5F5;
     font-family: 'Merriweather Sans', sans-serif;
-    height: 100%;
+    height: 70vh;
     display: grid;
     grid-template-rows: 10% 80% 20%;
 
@@ -43,10 +43,11 @@ h4 {
 }
 
 /* FOOTER */
-footer {
+.footer {
     display: flex;
     align-items: flex-end;
 }
+
 .footer {
     color: hotpink;
     border: 1px solid pink;
@@ -59,35 +60,42 @@ footer {
 
 /* CONTACT FORM */
 
-#contactForm { 
+#contactForm {
     display: none;
-    border: 6px solid hotpink; 
+    border: 6px solid hotpink;
     padding: 2em;
     width: 70%;
     height: 60%;
     text-align: center;
     background: #505050;
     position: fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     color: black;
-  }
-  
-  input, textarea { 
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
     margin: .8em auto;
-    font-family: inherit; 
-    text-transform: inherit; 
+    font-family: inherit;
+    text-transform: inherit;
     font-size: inherit;
-    
-    display: block; 
-    width: 80%; 
+
+    display: block;
+    width: 80%;
     padding: .4em;
-  }
-  textarea { height: 80px; resize: none; }
-  
-  .formBtn { 
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.formBtn {
     width: 140px;
     display: inline-block;
     padding: 5px;
@@ -96,22 +104,30 @@ footer {
     font-size: 1.2em;
     border: none;
     height: 30px;
-  }
+}
 
-  /* MEDIA QUERY */
+/* MEDIA QUERY */
 
-  @media only screen and (min-width: 600px) {
-    .footer, footer {
+@media only screen and (min-width: 600px) {
+
+    
+
+    .footer,
+    a {
         border: none;
-        text-decoration: none;  
-        text-align: right;
-        display: -webkit-inline-box;
-        margin-top: -5px;
+        text-decoration: none;
+        display: block;
         font-size: 1rem;
+        text-align: center;
+        padding: 15px;
+        transition: all 0.5s ease;
+        text-align: left;
     }
 
     img {
         height: 250px;
         margin-top: -3px;
     }
-  }
+   
+
+}
