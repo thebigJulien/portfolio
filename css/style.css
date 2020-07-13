@@ -46,9 +46,6 @@ h4 {
 .footer {
     display: flex;
     align-items: flex-end;
-}
-
-.footer {
     color: hotpink;
     border: 1px solid pink;
     padding: 15px;
@@ -74,8 +71,6 @@ h4 {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     color: black;
-    display: flex;
-    flex-direction: column;
 }
 
 input,
@@ -112,8 +107,7 @@ textarea {
 
     
 
-    .footer,
-    a {
+    .footer {
         border: none;
         text-decoration: none;
         display: block;
